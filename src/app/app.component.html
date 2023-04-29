@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div *ngFor="let pokemon of pokemonList" class="col s6 m4">
-            <div class="card horizontal" (click)="selectPokemon(pokemon.id.toString())" pkmnBorderCard>
+            <div class="card horizontal" (click)="selectPokemon(pokemon.id.toString())"pkmnBorderCard="red">
                 <div class ="card-image">
                     <img [src]="pokemon.picture" />
                 </div>
@@ -15,7 +15,7 @@
                 </div>
             </div>
            
-        </div>
+        </div>©
     </div>
 </div>
 
