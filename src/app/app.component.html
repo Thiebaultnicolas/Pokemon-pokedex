@@ -1,12 +1,13 @@
 <h1> Liste de Pokémons</h1>
-<!-- utilisation de la syntaxe d'interpolation
-pour afficher le nom du premier pokémon 
-et je vais repeter ce processus pour
-les 12 pokemons -->
+
 <input 
-type="number"
-(click)="selectPokemon($event)"
+    #input
+    (keyup)="selectPokemon(input.value)"
+    type="number"
+   
 />
+<p>{{ pokemonSelected?.name}}</p>
+
 <p>{{ pokemonList[0].name }}</p>
 <p>{{ pokemonList[1].name }}</p>
 <p>{{ pokemonList[2].name }}</p>
