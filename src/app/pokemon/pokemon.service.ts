@@ -4,6 +4,9 @@ import { POKEMONS } from './mock-pokemon-list';
 
 @Injectable()
 export class PokemonService {
+  getPokemonTypeList(): string[] {
+    throw new Error('Method not implemented.');
+  }
 
   getPokemonList (): Pokemon[]{
     return POKEMONS;
@@ -13,7 +16,7 @@ export class PokemonService {
     return POKEMONS.find(pokemon => pokemon.id == pokemonId);
   }
 
-  pokemonTypeList(): string[] {
+  getpokemonTypeList(): string[] {
     return [
       'Plante',
       'Feu',
