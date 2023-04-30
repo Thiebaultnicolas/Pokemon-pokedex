@@ -1,1 +1,33 @@
-<p>list-pokemon works!</p>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let pokemon of pokemonList" class="col s6 m4">
+            <div class="card horizontal" pkmnBorderCard>
+                <div class ="card-image">
+                    <img [src]="pokemon.picture" />
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>{{ pokemon.name }}</p>
+                        <p><small>{{ pokemon.created | date:"dd/MM/yyyy"}}</small></p>
+                        <!-- utilisaton de ngFor car un pokemon n'a pas que un seul type
+                        il peut en avoir plusieurs donc pour chacun de ses types on vas
+                        crée une bulle de couleur , donc on récupére le type courant du 
+                        pokemon(let type of pokemon.types) et nous lui appliquon commme
+                        class le résultat du pipe que j'ai cré , donc nous prenon son
+                        type (type) et nous transformont par exemple feu en une class
+                        css pour colorer ce type (type | pokemonTypeColor)-->
+                        <span 
+                            *ngFor="let type of pokemon.types" 
+                            class="{{ type | pokemonTypeColor }}"
+                        >
+                         <!-- ici au millieu du rond de couleur on ajoute le type correspondant
+                         que l'on récupère avec le ngFor-->
+                            {{ type }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+           
+        </div>©
+    </div>
+</div>
