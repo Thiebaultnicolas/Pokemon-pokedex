@@ -20,7 +20,7 @@ export class PokemonFormComponent implements OnInit{
   ) { }
 
  ngOnInit() {
-  this.types = this.pokemonService.getPokemonTypeList();
+  this.types = this.pokemonService.getpokemonTypeList();
 }
 
  hasType(type: string): boolean {  
