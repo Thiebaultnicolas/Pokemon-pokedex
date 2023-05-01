@@ -17,12 +17,14 @@ import { PokemonService } from '../pokemon.service';
 export class ListPokemonComponent implements OnInit {
   pokemonList: Pokemon[];
 
-  constructor(private router: Router,
+  constructor(
+    private router: Router,
     private pokemonService: PokemonService
     ) {}
 
     ngOnInit() {
-     this.pokemonList = this.pokemonService.getPokemonList();
+       this.pokemonService.getPokemonList()
+        .subscribe(pokemonList => this.pokemonList = pokemonList);
     }
 
   goToPokemon(pokemon: Pokemon) {
