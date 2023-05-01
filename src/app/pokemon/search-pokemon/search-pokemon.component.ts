@@ -29,7 +29,6 @@ export class SearchPokemonComponent implements OnInit {
      //{......"ab".........."abc"......}
      switchMap((term) => this.pokemonService.searchPokemonList(term))// concatMap / mergeMap / switchMap (dans la plus-part des cas utiliser switchMap)
      //{.....pokemonList(ab)........pokemonList(abc)......}
-     
    );
  }
 
