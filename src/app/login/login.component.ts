@@ -9,7 +9,8 @@ import { Router } from '@angular/router';
   ]
 })
 export class LoginComponent implements OnInit {
-  message: string = ' Vous êtes déconnecté. (pikachu/pikachu)';
+  message: string = ' Vous êtes déconnecté.';
+  message2: string = ' Utilise : pikachu/pikachu '
   name: string;
   password: string;
   auth: AuthService; 
