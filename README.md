@@ -2,7 +2,8 @@
 # Pokemon-pokedex-Angular
 
 
-### Création d'une application web avec Angular. Lien vers l'application web : https://ng-pokemon-app-f8efc.web.app/login
+### Création d'une application web avec Angular. 
+Lien vers l'application web : https://ng-pokemon-app-f8efc.web.app/login
 
 ### Découverte d'Angular:
 
