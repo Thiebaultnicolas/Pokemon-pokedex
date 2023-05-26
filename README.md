@@ -1,27 +1,39 @@
-# NgPokemonApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
+# Pokemon-pokedex-Angular
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Création d'une application web avec Angular. Lien vers l'application web : https://ng-pokemon-app-f8efc.web.app/login
 
-## Code scaffolding
+#### Découverte d'Angular:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Générer des composants.
 
-## Build
+Les Templates.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Les Directives.
 
-## Running unit tests
+Les Pipes.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Les Routes.
 
-## Running end-to-end tests
+Générer des Services.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Formulaires.
 
-## Further help
+Les Requêtes HTTP.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+RxJS (librairie).
+
+Authentification et Sécurité.
+
+## Installation:
+```git clone https://github.com/Thiebaultnicolas/Pokemon-pokedex-Angular.git```: clone le projet dans un dossier local
+
+```npm install```: installe tout les packages dont le projet dépend.
+
+```ng serve```: compile et lance l'application sur un port donné
+
+❗Important: Le ```name``` et le ```password``` pour se connecter sur l'application en production est ```pikachu```.
+
+
+
