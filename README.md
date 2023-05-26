@@ -4,7 +4,7 @@
 
 ### Création d'une application web avec Angular. Lien vers l'application web : https://ng-pokemon-app-f8efc.web.app/login
 
-#### Découverte d'Angular:
+### Découverte d'Angular:
 
 Générer des composants.
 
